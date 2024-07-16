@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    
     "target": "es2022",
     "module": "es2022",
     "moduleResolution": "bundler",
@@ -10,8 +11,10 @@
     "skipLibCheck": true,
     "paths": {
       "$amplify/*": [
-        "../.amplify/generated/*"
-      ]
+        "../.amplify/generated/*",
+        
+      ],
+      "say-hello-resource": ["../amplify/functions/say-hello/resource"]
     }
   }
 }
