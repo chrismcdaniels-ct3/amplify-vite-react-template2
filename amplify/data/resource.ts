@@ -11,6 +11,10 @@ const schema = a.schema({
     .model({
       content: a.string(),    
     }).authorization(allow => [allow.owner()]),
+  Challenge: a
+    .model({      
+      description: a.string(), 
+    }),    
 });
 
 export type Schema = ClientSchema<typeof schema>;
