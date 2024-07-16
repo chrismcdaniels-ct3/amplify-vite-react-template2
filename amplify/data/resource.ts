@@ -14,7 +14,7 @@ const schema = a.schema({
   Challenge: a
     .model({      
       description: a.string(), 
-    }),    
+    }).authorization(allow => [allow.authenticated().to(["read"]),]),    
 });
 
 export type Schema = ClientSchema<typeof schema>;
